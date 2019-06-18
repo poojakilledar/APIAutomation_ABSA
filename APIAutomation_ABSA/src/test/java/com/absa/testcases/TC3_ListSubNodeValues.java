@@ -36,7 +36,7 @@ public class TC3_ListSubNodeValues extends ExtentReportManager{
 	}
 
 	@DataProvider(name = "TC3_DOGAPI")
-	public Object[][] getSearchActiveCustomerData() throws Exception {
+	public Object[][] getDogDetails() throws Exception {
 		ExcelUtility readXlsx = new ExcelUtility();
 		String filePath = DataPath.TESTDATA_BASE_DIR+DataPath.DOGAPI_DATA;
 		return readXlsx.readFileAndSheet(filePath, "TC3_DOGAPI");
@@ -75,6 +75,7 @@ public class TC3_ListSubNodeValues extends ExtentReportManager{
 			 Assertion.assertTrue(true, "Verify API response."+bodyStringValue);
 		
 		} catch (Exception e) {
+			Assertion.assertFail(e.getMessage());
 			System.out.println("ERROR occured while processing request. " + e.getMessage());
 		}
 
