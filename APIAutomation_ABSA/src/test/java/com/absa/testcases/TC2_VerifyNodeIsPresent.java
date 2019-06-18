@@ -32,7 +32,7 @@ public class TC2_VerifyNodeIsPresent extends ExtentReportManager{
 	}
 
 	@DataProvider(name = "TC2_DOGAPI")
-	public Object[][] getSearchActiveCustomerData() throws Exception {
+	public Object[][] getDogDetails() throws Exception {
 		ExcelUtility readXlsx = new ExcelUtility();
 		String filePath = DataPath.TESTDATA_BASE_DIR+DataPath.DOGAPI_DATA;
 		return readXlsx.readFileAndSheet(filePath, "TC2_DOGAPI");
@@ -65,6 +65,7 @@ public class TC2_VerifyNodeIsPresent extends ExtentReportManager{
 			 Assertion.assertTrue(true, "Verify API response."+bodyStringValue);
 			 
 		} catch (Exception e) {
+			Assertion.assertFail(e.getMessage());
 			System.out.println("ERROR occured while processing request. " + e.getMessage());
 		}
 
