@@ -30,7 +30,7 @@ public class TC1_ListAllDogsData extends ExtentReportManager{
 	}
 
 	@DataProvider(name = "DP_DOGAPI")
-	public Object[][] getSearchActiveCustomerData() throws Exception {
+	public Object[][] getDogDetails() throws Exception {
 		ExcelUtility readXlsx = new ExcelUtility();
 		String filePath = DataPath.TESTDATA_BASE_DIR+DataPath.DOGAPI_DATA;
 		return readXlsx.readFileAndSheet(filePath, "TC1_DOGAPI");
