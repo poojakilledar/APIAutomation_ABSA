@@ -30,7 +30,7 @@ public class TC4_VerifyImageAPIBySubBreed extends ExtentReportManager{
 	}
 
 	@DataProvider(name = "TC4_DOGAPI")
-	public Object[][] getSearchActiveCustomerData() throws Exception {
+	public Object[][] getDogDetails() throws Exception {
 		ExcelUtility readXlsx = new ExcelUtility();
 		String filePath = DataPath.TESTDATA_BASE_DIR+DataPath.DOGAPI_DATA;
 		return readXlsx.readFileAndSheet(filePath, "TC4_DOGAPI");
@@ -64,6 +64,7 @@ public class TC4_VerifyImageAPIBySubBreed extends ExtentReportManager{
 			 Assertion.assertTrue(true,"Verify API response."+bodyStringValue);
 			 
 		} catch (Exception e) {
+			Assertion.assertFail(e.getMessage());
 			System.out.println("ERROR occured while processing request. " + e.getMessage());
 		}
 
