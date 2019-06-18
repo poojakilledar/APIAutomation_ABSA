@@ -1,0 +1,104 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>5/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Jun 18 20:01:42 CAT 2019</td>
+</tr>
+<tr><td>Total time:</td><td>6 seconds (6350 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.absa.testcases.TC1_ListAllDogsData.getDogDetails()'><b>getDogDetails</b><br>Test class: com.absa.testcases.TC1_ListAllDogsData<br>Parameters: public void com.absa.testcases.TC1_ListAllDogsData.getDogDetails(java.lang.reflect.Method,java.util.Map), {TestName=Perform an API request to produce a list of all dog breeds., ExpectedStatusCode=200, TestDescription=Perform an API request to produce a list of all dog breeds., ExpectedContentType=json}</td>
+<td></td>
+<td>2</td>
+<td>com.absa.testcases.TC1_ListAllDogsData@1fee20c</td></tr>
+<tr>
+<td title='com.absa.testcases.TC3_ListSubNodeValues.listSubNodeDetails()'><b>listSubNodeDetails</b><br>Test class: com.absa.testcases.TC3_ListSubNodeValues<br>Parameters: public void com.absa.testcases.TC3_ListSubNodeValues.listSubNodeDetails(java.lang.reflect.Method,java.util.Map), {TestName=Perform an API request to produce a list of sub-breeds for “retriever”., ExpectedStatusCode=200, TestDescription=Perform an API request to produce a list of sub-breeds for “retriever”., DatafieldToVerify=retriever}</td>
+<td></td>
+<td>0</td>
+<td>com.absa.testcases.TC3_ListSubNodeValues@616ca2</td></tr>
+<tr>
+<td title='com.absa.testcases.TC4_VerifyImageAPIBySubBreed.verifyImageAPIResponseBySubBreed()'><b>verifyImageAPIResponseBySubBreed</b><br>Test class: com.absa.testcases.TC4_VerifyImageAPIBySubBreed<br>Parameters: public void com.absa.testcases.TC4_VerifyImageAPIBySubBreed.verifyImageAPIResponseBySubBreed(java.lang.reflect.Method,java.util.Map), {TestName=Perform an API request to produce a random image / link for the sub-breed “golden”., ExpectedStatusCode=200, TestDescription=Perform an API request to produce a random image / link for the sub-breed “golden”., DatafieldToVerify=retriever-golden}</td>
+<td></td>
+<td>0</td>
+<td>com.absa.testcases.TC4_VerifyImageAPIBySubBreed@3e6358</td></tr>
+<tr>
+<td title='com.absa.testcases.TC4_VerifyImageAPIBySubBreed.verifyImageAPIResponseBySubBreed()'><b>verifyImageAPIResponseBySubBreed</b><br>Test class: com.absa.testcases.TC4_VerifyImageAPIBySubBreed<br>Parameters: public void com.absa.testcases.TC4_VerifyImageAPIBySubBreed.verifyImageAPIResponseBySubBreed(java.lang.reflect.Method,java.util.Map), {TestName=Perform an API request to produce a random image / link for the sub-breed “hound”., ExpectedStatusCode=200, TestDescription=Perform an API request to produce a random image / link for the sub-breed “hound”., DatafieldToVerify=hound}</td>
+<td></td>
+<td>0</td>
+<td>com.absa.testcases.TC4_VerifyImageAPIBySubBreed@3e6358</td></tr>
+<tr>
+<td title='com.absa.testcases.TC2_VerifyNodeIsPresent.verifyNodeIsPresent()'><b>verifyNodeIsPresent</b><br>Test class: com.absa.testcases.TC2_VerifyNodeIsPresent<br>Parameters: public void com.absa.testcases.TC2_VerifyNodeIsPresent.verifyNodeIsPresent(java.lang.reflect.Method,java.util.Map), {TestName=Verify “retriever” breed is within the list., ExpectedStatusCode=200, TestDescription=Verify “retriever” breed is within the list., DatafieldToVerify=retriever}</td>
+<td></td>
+<td>0</td>
+<td>com.absa.testcases.TC2_VerifyNodeIsPresent@4a765</td></tr>
+</table><p>
+</body>
+</html>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<listeners>
+        <listener class-name="com.absa.reports.ExtentReportManager"/>
+    </listeners>
+	<test thread-count="5" name="Test">
+		<classes>
+			<class name="com.absa.testcases.TC1_ListAllDogsData" />
+			<class name="com.absa.testcases.TC2_VerifyNodeIsPresent" />
+			<class name="com.absa.testcases.TC3_ListSubNodeValues" />
+			<class name="com.absa.testcases.TC4_VerifyImageAPIBySubBreed" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->

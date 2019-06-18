@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="5" passed="5">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="6350" started-at="2019-06-18T18:01:42Z" finished-at="2019-06-18T18:01:48Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="6350" started-at="2019-06-18T18:01:42Z" finished-at="2019-06-18T18:01:48Z">
+      <class name="com.absa.testcases.TC4_VerifyImageAPIBySubBreed">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.absa.testcases.TC4_VerifyImageAPIBySubBreed@3e6358]" name="setup" is-config="true" duration-ms="0" started-at="2019-06-18T20:01:46Z" finished-at="2019-06-18T20:01:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="verifyImageAPIResponseBySubBreed(java.lang.reflect.Method, java.util.Map)[pri:0, instance:com.absa.testcases.TC4_VerifyImageAPIBySubBreed@3e6358]" name="verifyImageAPIResponseBySubBreed" duration-ms="625" started-at="2019-06-18T20:01:47Z" data-provider="TC4_DOGAPI" finished-at="2019-06-18T20:01:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.absa.testcases.TC4_VerifyImageAPIBySubBreed.verifyImageAPIResponseBySubBreed(java.lang.reflect.Method,java.util.Map)]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[{TestName=Perform an API request to produce a random image / link for the sub-breed “golden”., ExpectedStatusCode=200, TestDescription=Perform an API request to produce a random image / link for the sub-breed “golden”., DatafieldToVerify=retriever-golden}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyImageAPIResponseBySubBreed -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.absa.testcases.TC4_VerifyImageAPIBySubBreed@3e6358]" name="getResult" is-config="true" duration-ms="15" started-at="2019-06-18T20:01:47Z" finished-at="2019-06-18T20:01:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyImageAPIResponseBySubBreed status=SUCCESS method=TC4_VerifyImageAPIBySubBreed.verifyImageAPIResponseBySubBreed(java.lang.reflect.Method, java.util.Map)[pri:0, instance:com.absa.testcases.TC4_VerifyImageAPIBySubBreed@3e6358] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="verifyImageAPIResponseBySubBreed(java.lang.reflect.Method, java.util.Map)[pri:0, instance:com.absa.testcases.TC4_VerifyImageAPIBySubBreed@3e6358]" name="verifyImageAPIResponseBySubBreed" duration-ms="892" started-at="2019-06-18T20:01:47Z" data-provider="TC4_DOGAPI" finished-at="2019-06-18T20:01:48Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.absa.testcases.TC4_VerifyImageAPIBySubBreed.verifyImageAPIResponseBySubBreed(java.lang.reflect.Method,java.util.Map)]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[{TestName=Perform an API request to produce a random image / link for the sub-breed “hound”., ExpectedStatusCode=200, TestDescription=Perform an API request to produce a random image / link for the sub-breed “hound”., DatafieldToVerify=hound}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyImageAPIResponseBySubBreed -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.absa.testcases.TC4_VerifyImageAPIBySubBreed@3e6358]" name="getResult" is-config="true" duration-ms="0" started-at="2019-06-18T20:01:48Z" finished-at="2019-06-18T20:01:48Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyImageAPIResponseBySubBreed status=SUCCESS method=TC4_VerifyImageAPIBySubBreed.verifyImageAPIResponseBySubBreed(java.lang.reflect.Method, java.util.Map)[pri:0, instance:com.absa.testcases.TC4_VerifyImageAPIBySubBreed@3e6358] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+      </class> <!-- com.absa.testcases.TC4_VerifyImageAPIBySubBreed -->
+      <class name="com.absa.testcases.TC1_ListAllDogsData">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.absa.testcases.TC1_ListAllDogsData@1fee20c]" name="setup" is-config="true" duration-ms="391" started-at="2019-06-18T20:01:42Z" finished-at="2019-06-18T20:01:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="getDogDetails(java.lang.reflect.Method, java.util.Map)[pri:0, instance:com.absa.testcases.TC1_ListAllDogsData@1fee20c]" name="getDogDetails" duration-ms="2425" started-at="2019-06-18T20:01:43Z" data-provider="DP_DOGAPI" finished-at="2019-06-18T20:01:45Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.absa.testcases.TC1_ListAllDogsData.getDogDetails(java.lang.reflect.Method,java.util.Map)]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[{TestName=Perform an API request to produce a list of all dog breeds., ExpectedStatusCode=200, TestDescription=Perform an API request to produce a list of all dog breeds., ExpectedContentType=json}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getDogDetails -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.absa.testcases.TC1_ListAllDogsData@1fee20c]" name="getResult" is-config="true" duration-ms="0" started-at="2019-06-18T20:01:45Z" finished-at="2019-06-18T20:01:45Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=getDogDetails status=SUCCESS method=TC1_ListAllDogsData.getDogDetails(java.lang.reflect.Method, java.util.Map)[pri:0, instance:com.absa.testcases.TC1_ListAllDogsData@1fee20c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="endReport()[pri:0, instance:com.absa.testcases.TC1_ListAllDogsData@1fee20c]" name="endReport" is-config="true" duration-ms="0" started-at="2019-06-18T20:01:48Z" finished-at="2019-06-18T20:01:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endReport -->
+      </class> <!-- com.absa.testcases.TC1_ListAllDogsData -->
+      <class name="com.absa.testcases.TC2_VerifyNodeIsPresent">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.absa.testcases.TC2_VerifyNodeIsPresent@4a765]" name="setup" is-config="true" duration-ms="0" started-at="2019-06-18T20:01:45Z" finished-at="2019-06-18T20:01:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="verifyNodeIsPresent(java.lang.reflect.Method, java.util.Map)[pri:0, instance:com.absa.testcases.TC2_VerifyNodeIsPresent@4a765]" name="verifyNodeIsPresent" duration-ms="656" started-at="2019-06-18T20:01:45Z" data-provider="TC2_DOGAPI" finished-at="2019-06-18T20:01:46Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.absa.testcases.TC2_VerifyNodeIsPresent.verifyNodeIsPresent(java.lang.reflect.Method,java.util.Map)]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[{TestName=Verify “retriever” breed is within the list., ExpectedStatusCode=200, TestDescription=Verify “retriever” breed is within the list., DatafieldToVerify=retriever}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyNodeIsPresent -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.absa.testcases.TC2_VerifyNodeIsPresent@4a765]" name="getResult" is-config="true" duration-ms="0" started-at="2019-06-18T20:01:46Z" finished-at="2019-06-18T20:01:46Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyNodeIsPresent status=SUCCESS method=TC2_VerifyNodeIsPresent.verifyNodeIsPresent(java.lang.reflect.Method, java.util.Map)[pri:0, instance:com.absa.testcases.TC2_VerifyNodeIsPresent@4a765] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+      </class> <!-- com.absa.testcases.TC2_VerifyNodeIsPresent -->
+      <class name="com.absa.testcases.TC3_ListSubNodeValues">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.absa.testcases.TC3_ListSubNodeValues@616ca2]" name="init" is-config="true" duration-ms="0" started-at="2019-06-18T20:01:42Z" finished-at="2019-06-18T20:01:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.absa.testcases.TC3_ListSubNodeValues@616ca2]" name="setup" is-config="true" duration-ms="0" started-at="2019-06-18T20:01:46Z" finished-at="2019-06-18T20:01:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="listSubNodeDetails(java.lang.reflect.Method, java.util.Map)[pri:0, instance:com.absa.testcases.TC3_ListSubNodeValues@616ca2]" name="listSubNodeDetails" duration-ms="626" started-at="2019-06-18T20:01:46Z" data-provider="TC3_DOGAPI" finished-at="2019-06-18T20:01:46Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.absa.testcases.TC3_ListSubNodeValues.listSubNodeDetails(java.lang.reflect.Method,java.util.Map)]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[{TestName=Perform an API request to produce a list of sub-breeds for “retriever”., ExpectedStatusCode=200, TestDescription=Perform an API request to produce a list of sub-breeds for “retriever”., DatafieldToVerify=retriever}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- listSubNodeDetails -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.absa.testcases.TC3_ListSubNodeValues@616ca2]" name="getResult" is-config="true" duration-ms="0" started-at="2019-06-18T20:01:46Z" finished-at="2019-06-18T20:01:46Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=listSubNodeDetails status=SUCCESS method=TC3_ListSubNodeValues.listSubNodeDetails(java.lang.reflect.Method, java.util.Map)[pri:0, instance:com.absa.testcases.TC3_ListSubNodeValues@616ca2] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+      </class> <!-- com.absa.testcases.TC3_ListSubNodeValues -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

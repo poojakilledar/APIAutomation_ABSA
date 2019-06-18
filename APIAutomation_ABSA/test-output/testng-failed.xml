@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="com.absa.reports.ExtentReportManager"/>
+  </listeners>
+  <test name="Test(failed)">
+    <classes>
+      <class name="com.absa.testcases.TC2_VerifyNodeIsPresent">
+        <methods>
+          <include name="verifyNodeIsPresent"/>
+        </methods>
+      </class> <!-- com.absa.testcases.TC2_VerifyNodeIsPresent -->
+      <class name="com.absa.testcases.TC3_ListSubNodeValues">
+        <methods>
+          <include name="listSubNodeDetails"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- com.absa.testcases.TC3_ListSubNodeValues -->
+      <class name="com.absa.testcases.TC4_VerifyImageAPIBySubBreed">
+        <methods>
+          <include name="verifyImageAPIResponseBySubBreed"/>
+        </methods>
+      </class> <!-- com.absa.testcases.TC4_VerifyImageAPIBySubBreed -->
+      <class name="com.absa.testcases.TC1_ListAllDogsData">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="startReport"/>
+          <include name="startTest"/>
+          <include name="setup"/>
+          <include name="getResult"/>
+        </methods>
+      </class> <!-- com.absa.testcases.TC1_ListAllDogsData -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
