@@ -60,6 +60,7 @@ public class TC1_ListAllDogsData extends ExtentReportManager{
 			 Assertion.assertTrue(true, "Verify API response"+bodyStringValue);
 			 
 		} catch (Exception e) {
+			Assertion.assertFail(e.getMessage());
 			System.out.println("ERROR occured while processing request. " + e.getMessage());
 		}
 
