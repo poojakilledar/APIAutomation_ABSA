@@ -35,11 +35,15 @@ TC4_VerifyImageAPIBySubBreed
 - Perform an API request to produce a random image / link for the sub-breed “golden”.
 - Getting error response for sub-breed "golden", hence added one more row in test data file for sub-breed 'hound'.
 
+
 # Automation Project
 Input Data : 
 TestNG Data provider was used to read data from excel.
 Config/properties file is used to read AUT details. Here, file is empty.
 Java classes are created to read constants.
 
-Test Output:
+# Test Execution
+1. Run testng.xml to execute the testcases. AutomatonReport.html gets created when the suite is executed.
+
+# Test Output:
 Implemented extent report to log and document for test cases with steps along with results.
