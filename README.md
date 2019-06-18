@@ -20,18 +20,19 @@ These instructions will get you a copy of the project up and running on your loc
 
 # Running the tests
 - Right click on Project. Click on Maven -> Update Project.
-- Right click on Project -> Run As -> TestNG.
+- Right click on Project -> Run As -> Run Config -> Select Suite ->Browse -> Select testng.xml -> Apply ->Run
+- Or Right click on testng.xml -> Click on Run button
  
 # Tests
 com.absa.testcases package contains all test cases. Below class files are created to auromate pre-defined test flows. 
 
-TC1_ListAllDogsData 
+#vTC1_ListAllDogsData 
 - Perform an API request to produce a list of all dog breeds.
-TC2_VerifyNodeIsPresent
+# TC2_VerifyNodeIsPresent
 - Using code, verify “retriever” breed is within the list.
-TC3_ListSubNodeValues
+# TC3_ListSubNodeValues
 - Perform an API request to produce a list of sub-breeds for “retriever”.
-TC4_VerifyImageAPIBySubBreed
+# TC4_VerifyImageAPIBySubBreed
 - Perform an API request to produce a random image / link for the sub-breed “golden”.
 - Getting error response for sub-breed "golden", hence added one more row in test data file for sub-breed 'hound'.
 
