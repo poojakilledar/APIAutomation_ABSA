@@ -62,7 +62,7 @@ public class TC2_VerifyNodeIsPresent extends ExtentReportManager{
 			//Checking particular data-field value/key is present or not
 			 Assertion.assertTrue(bodyStringValue.contains(testdatafieldToVerify), "Verify '"+testdatafieldToVerify+"' is in within API response.");
 			 
-			 Assertion.assertTrue(true, "Verify API response."+bodyStringValue);
+			 Assertion.assertTrue(!bodyStringValue.isEmpty(),"Verify API response."+bodyStringValue);
 			 
 		} catch (Exception e) {
 			Assertion.assertFail(e.getMessage());
