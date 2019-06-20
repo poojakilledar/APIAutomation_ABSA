@@ -61,7 +61,7 @@ public class TC4_VerifyImageAPIBySubBreed extends ExtentReportManager{
 			 List<String> dataNode = jsonPathEvaluator.get("message");
 			 Assertion.assertTrue(dataNode.size()>0, "Verify API response is not empty.");
 			 
-			 Assertion.assertTrue(true,"Verify API response."+bodyStringValue);
+			 Assertion.assertTrue(!bodyStringValue.isEmpty(),"Verify API response."+bodyStringValue);
 			 
 		} catch (Exception e) {
 			Assertion.assertFail(e.getMessage());
