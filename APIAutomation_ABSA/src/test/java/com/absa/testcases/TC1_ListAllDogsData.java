@@ -57,7 +57,7 @@ public class TC1_ListAllDogsData extends ExtentReportManager{
 			 
 			 Assertion.assertTrue(!bodyStringValue.isEmpty(), "Verify API response is not empty.");
 			
-			 Assertion.assertTrue(true, "Verify API response"+bodyStringValue);
+			 Assertion.assertTrue(!bodyStringValue.isEmpty(),"Verify API response."+bodyStringValue);
 			 
 		} catch (Exception e) {
 			Assertion.assertFail(e.getMessage());
