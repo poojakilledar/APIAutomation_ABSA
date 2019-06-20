@@ -66,13 +66,13 @@ public class TC3_ListSubNodeValues extends ExtentReportManager{
 			 Assertion.assertTrue(responseStatus.equals("success"),"Verify Status code is 200" );
 			 
 			 //Checking particular data-field value/key is present or not
-			 Assertion.assertTrue(bodyStringValue.contains(testdatafieldToVerify), "Verify '"+"testdatafieldToVerify"+"' is in within API response." );
+			 Assertion.assertTrue(bodyStringValue.contains(testdatafieldToVerify), "Verify '"+testdatafieldToVerify+"' is in within API response." );
 			 
 			//Checking node data is not null.
 			 List<String> dataNode = jsonPathEvaluator.get("message");
 			 Assertion.assertTrue(dataNode.size()>0, "Verify API response is not empty." );
 			 
-			 Assertion.assertTrue(true, "Verify API response."+bodyStringValue);
+			 Assertion.assertTrue(!bodyStringValue.isEmpty(),"Verify API response."+bodyStringValue);
 		
 		} catch (Exception e) {
 			Assertion.assertFail(e.getMessage());
